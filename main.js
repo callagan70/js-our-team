@@ -34,8 +34,10 @@ let list = [
 console.log(list)
 
 for ( i=0; i < list.length; i++){
+console.log(list[i])
+console.log("Nome:", list[i]['name'])
+console.log("Ruolo: ", list[i]['role'])
+console.log("Immagine: ", list[i]['img'])
 
 
-
-    
 }
