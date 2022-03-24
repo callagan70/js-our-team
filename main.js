@@ -34,10 +34,17 @@ let list = [
 console.log(list)
 
 for ( i=0; i < list.length; i++){
+
+    document.getElementById("card").innerHTML +=  `
+    <div>
+        <img src="./img/${list[i]['img']}">
+        <p>${list[i]['name']}</p>
+        <p>${list[i]['role']}</p>
+    </div>`
+
 console.log(list[i])
 console.log("Nome:", list[i]['name'])
 console.log("Ruolo: ", list[i]['role'])
 console.log("Immagine: ", list[i]['img'])
-
 
 }
